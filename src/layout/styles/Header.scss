@@ -1,0 +1,37 @@
+
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+  background: linear-gradient(rgba(45, 132, 237, 1), rgba(98, 49, 135, 0.5));
+  display: flex;
+  justify-content: center;
+
+  .headerTitle {
+    padding: 1rem;
+    margin-left: 70px;
+    margin-right: 60px;
+  }
+
+  .headerNavigation {
+    padding: 1rem;
+    width: 40%;
+
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        margin-right: 2rem;
+        &:hover { font-weight: 600; }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    li { margin-bottom: 0.5rem; }
+  }
+}

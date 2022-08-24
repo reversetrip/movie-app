@@ -1,0 +1,18 @@
+
+.moviesContainer {
+  padding-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 700px) {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .notFound {
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+  }
+}

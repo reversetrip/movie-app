@@ -1,0 +1,19 @@
+
+.card {
+  width: 250px;
+  margin: 0.5rem;
+  padding: 1rem;
+
+  .cardPoster { margin-bottom: 0.5rem; }
+
+  .cardDescription {
+    text-align: center;
+    font-weight: 600;
+
+    p {
+      display: flex;
+      justify-content: space-around;
+      a:hover { color: red; }
+    }
+  }
+}

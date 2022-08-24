@@ -1,0 +1,35 @@
+
+%opacity-block {
+  opacity: 0.7;
+  &:hover, &:focus { opacity: 1; }
+}
+.searchPanel {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+
+  .movieSearch {
+    margin-bottom: 0.5rem;
+
+    input {
+      @extend %opacity-block;
+      width: 200px;
+      margin-right: 0.5rem;
+      padding: 0.2rem;
+    }
+
+    button {
+      @extend %opacity-block;
+      padding: 0.2rem;
+    }
+  }
+
+  .movieType label {
+    margin-right: 1rem;
+    &:hover { font-weight: 600; }
+
+    input {
+      @extend %opacity-block;
+      margin-right: 0.2rem;
+    }
+  }
+}
